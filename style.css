@@ -1,3 +1,7 @@
+:root {
+  --font-stack: "Roboto Mono", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,39 +12,44 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: sans-serif;
-  background-color: #3c3d37;
+  background-color: #ffffff;
 }
 .grid-container {
   display: grid;
+  font-family: var(--font-stack);
   width: 100%;
-  max-width: 60rem;
+  max-width: 65rem;
   grid-template-columns: repeat(auto-fit, 1fr);
   gap: 2rem;
   margin: 2rem;
 }
 
 .card {
-  background-color: #6482ad;
-  border: 0.3rem solid #f5eded;
+  background-color: #fdfdfd;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  color: #f5eded;
+  color: #000000;
   height: fit-content;
   text-align: center;
-  padding: 0.5rem;
+  margin: 1.5rem;
+  padding: 2rem 0;
 }
 p {
   font-size: 1.4rem;
+  line-height: 1.5;
   text-align: left;
-  padding: 1rem;
+  padding: 1rem 5rem;
 }
 hr {
-  border: 0.5rem solid #f5eded;
-  border-radius: 10px;
-  margin: 0.5rem;
+  border: 0.3rem solid rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
 }
 h1 {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+}
+h2 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
 }
 a {
   color: #5ab2ff;
@@ -50,6 +59,14 @@ a {
 }
 #main-P {
   font-size: 5rem;
-  color: #ffffff;
+  color: #000000;
+  font-weight: bold;
   text-align: center;
+}
+
+strong {
+  font-family: "Consolas", monospace;
+  font-weight: 600;
+  color: #1b1b1b;
+  padding: 0 2px;
 }
